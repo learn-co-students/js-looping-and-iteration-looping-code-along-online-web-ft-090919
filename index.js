@@ -1,1 +1,48 @@
-// Code your solutions in this file
+const cards = []
+console.log(cards)
+
+
+function writeCards(card_names){
+  for (let i = 0; i < card_names.length; i++) {
+  cards.push(`Thank you, ${card_names[i]}, for the wonderful surprise gift!`)
+  }
+  return cards
+}
+
+
+
+function countDown(count){
+  while (count > 0) {
+  console.log(count);
+  count -= 1;
+  }
+console.log(count);
+}
+// function countDown(``)
+
+// describe( 'countDown()', () => {
+//   afterEach( () => {
+//     spy.restore();
+//   } );
+//
+//   it( 'invokes console.log once for each number, counting down from the number provided to zero', () => {
+//     countDown( 10 );
+//     expect( spy.callCount, "Expected countDown(10) to invoke 11 console.logs" )
+//       .to.eq( 11 );
+//   } );
+//
+//   it( 'logs each number when counting down, starting from the number provided', () => {
+//     countDown( 4 );
+//     expect( spy.calledWithExactly( 4 ), "Expected countDown(4) to log 4 first" )
+//       .to.be.true;
+//     expect( spy.calledWithExactly( 3 ), "Expected countDown(4) to log 3 after 4" )
+//       .to.be.true;
+//     expect( spy.calledWithExactly( 2 ), "Expected countDown(4) to log 2 after 3" )
+//       .to.be.true;
+//     expect( spy.calledWithExactly( 1 ), "Expected countDown(4) to log 1 after 2" )
+//       .to.be.true;
+//     expect( spy.calledWithExactly( 0 ), "Expected countDown(4) to log 0 after 1" )
+//       .to.be.true;
+//   } );
+// } );
+// } );
